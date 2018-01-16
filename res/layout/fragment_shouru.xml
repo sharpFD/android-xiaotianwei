@@ -1,0 +1,341 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <RelativeLayout android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <Button 
+            android:layout_width="40dp"
+            android:layout_height="30dp"
+            android:background="@drawable/back1"
+            android:layout_marginLeft="10dp"
+            android:layout_centerVertical="true"/>
+        <LinearLayout android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_marginLeft="40dp"
+            android:orientation="horizontal"
+            android:layout_centerInParent="true"
+            android:background="#00ff00"
+            >
+              <Button
+                android:id="@+id/button1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="支出"
+                android:textColor="#000000"
+                android:background="#70db93"
+                android:layout_margin="1dp"
+                />
+              <View android:layout_width="1dp"
+                  android:layout_height="match_parent"
+                  android:background="#cdcdcd"/>
+              <Button
+                android:id="@+id/button2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                 android:background="#70db93"
+                android:text="收入"    
+                android:textColor="#00FF00"
+                 android:layout_margin="1dp"           
+                />
+       </LinearLayout>
+           </RelativeLayout>
+       <RelativeLayout 
+           android:layout_width="match_parent"
+           android:layout_height="60dp"
+           android:background="#ff7f00">
+        <ImageView android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="10dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/bt_wages"/>
+            <EditText 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+           android:text="0.00"
+           android:textColor="#ff545454"
+           android:layout_marginLeft="260dp"
+           android:layout_centerVertical="true"
+           android:background="#00000000"
+                android:singleLine="true">
+              </EditText>
+       </RelativeLayout> 
+       <RelativeLayout 
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content">
+           <LinearLayout android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:id="@+id/gongzi"
+               android:orientation="vertical"
+               android:layout_marginLeft="30dp"
+               >
+               <ImageView android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:id="@+id/pic1"
+                   android:src="@drawable/bt_wages"
+                   />
+               <TextView android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:id="@+id/text1"
+                   android:text="工资"
+                  android:layout_marginLeft="7dp"
+                   />
+           </LinearLayout>
+             <LinearLayout android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:id="@+id/jiangjin"
+               android:orientation="vertical"
+               android:layout_toRightOf="@id/gongzi"
+               android:layout_marginLeft="30dp"
+               >
+               <ImageView android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:id="@+id/pic2"
+                   android:src="@drawable/bt_bouns"
+                   />
+               <TextView android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:id="@+id/text2"
+                   android:layout_marginLeft="7dp"
+                   android:text="奖金">
+                   </TextView>
+           </LinearLayout>
+           <LinearLayout android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:id="@+id/fuli"
+               android:orientation="vertical"
+               android:layout_toRightOf="@id/jiangjin"
+               android:layout_marginLeft="30dp"
+              >
+               <ImageView android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:id="@+id/pic3"
+                   android:src="@drawable/bt_fuli"
+                   />
+               <TextView android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:id="@+id/text3"
+                   android:text="福利"
+                    android:layout_marginLeft="7dp"
+                   />
+           </LinearLayout>
+            <LinearLayout android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:id="@+id/touzishouyi"
+               android:orientation="vertical"
+               android:layout_toRightOf="@id/fuli"
+               android:layout_marginLeft="30dp"
+             >
+               <ImageView android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:id="@+id/pic4"
+                   android:src="@drawable/bt_invest"
+                   />
+               <TextView android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:id="@+id/text4"
+                   android:text="投资收益"
+                    android:layout_marginLeft="7dp"
+                   />
+           </LinearLayout>
+       </RelativeLayout>  
+       <RelativeLayout 
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content">
+           <LinearLayout android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:id="@+id/hongbao"
+               android:orientation="vertical"
+               android:layout_marginLeft="30dp"
+               >
+               <ImageView android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:id="@+id/pic5"
+                   android:src="@drawable/bt_hongbao"
+                   />
+               <TextView android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:id="@+id/text5"
+                   android:text="红包"
+                  android:layout_marginLeft="7dp"
+                   />
+           </LinearLayout>
+             <LinearLayout android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:id="@+id/jianzhi"
+               android:orientation="vertical"
+               android:layout_toRightOf="@id/hongbao"
+               android:layout_marginLeft="30dp"
+               >
+               <ImageView android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:id="@+id/pic6"
+                   android:src="@drawable/bt_jianzhi"
+                   />
+               <TextView android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:id="@+id/text6"
+                   android:layout_marginLeft="3dp"
+                   android:text="兼职">
+                   </TextView>
+           </LinearLayout>
+           <LinearLayout android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:id="@+id/shenghuofei"
+               android:orientation="vertical"
+               android:layout_toRightOf="@id/jianzhi"
+               android:layout_marginLeft="30dp"
+              >
+               <ImageView android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:id="@+id/pic7"
+                   android:src="@drawable/bt_shenghuofei"
+                   />
+               <TextView android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:id="@+id/text7"
+                   android:text="生活费"
+                    android:layout_marginLeft="3dp"
+                   />
+           </LinearLayout>
+            <LinearLayout android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:id="@+id/baoxiao"
+               android:orientation="vertical"
+               android:layout_toRightOf="@id/shenghuofei"
+               android:layout_marginLeft="30dp"
+             >
+               <ImageView android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:id="@+id/pic8"
+                   android:src="@drawable/bt_baoxiao"
+                   />
+               <TextView android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:id="@+id/text8"
+                   android:text="报销"
+                    android:layout_marginLeft="7dp"
+                   />
+           </LinearLayout>
+       </RelativeLayout>   
+       <RelativeLayout 
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content">
+           <LinearLayout android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:id="@+id/tuikuan"
+               android:orientation="vertical"
+               android:layout_toRightOf="@id/tuikuan"
+               android:layout_marginLeft="30dp"
+               >
+               <ImageView android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:id="@+id/pic9"
+                   android:src="@drawable/bt_tuikuan"
+                   />
+               <TextView android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:id="@+id/text9"
+                   android:text="退款"
+                  android:layout_marginLeft="7dp"
+                   />
+           </LinearLayout>
+             <LinearLayout android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:id="@+id/gongjijin"
+               android:orientation="vertical"
+               android:layout_toRightOf="@id/tuikuan"
+               android:layout_marginLeft="30dp"
+               >
+               <ImageView android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:id="@+id/pic10"
+                   android:src="@drawable/bt_gongjijin"
+                   />
+               <TextView android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:id="@+id/text10"
+                   android:layout_marginLeft="7dp"
+                   android:text="公积金">
+                   </TextView>
+           </LinearLayout>
+           <LinearLayout android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:id="@+id/shebaojin"
+               android:orientation="vertical"
+               android:layout_toRightOf="@id/gongjijin"
+               android:layout_marginLeft="30dp"
+              >
+               <ImageView android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:id="@+id/pic11"
+                   android:src="@drawable/bt_shebao"
+                   />
+               <TextView android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:id="@+id/text11"
+                   android:text="社保金"
+                    android:layout_marginLeft="5dp"
+                   />
+           </LinearLayout>
+            <LinearLayout android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:orientation="vertical"
+               android:layout_toRightOf="@id/shebaojin"
+               android:layout_marginLeft="20dp"
+             >
+               <ImageView android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:id="@+id/pic12"
+                   android:src="@drawable/bt_yiwai"
+                   />
+               <TextView android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:id="@+id/text12"
+                   android:text="意外收获"
+                    android:layout_marginLeft="7dp"
+                   />
+           </LinearLayout>
+       </RelativeLayout> 
+       <RelativeLayout android:layout_width="match_parent"
+           android:layout_height="50dp"
+           android:background="#236b8e"
+           android:layout_marginTop="58dp">
+           <Button android:layout_width="40dp"
+               android:layout_height="40dp"
+               android:layout_centerVertical="true"
+               android:layout_marginLeft="15dp"
+               android:background="@drawable/ft_cash1"/>
+           <TextView android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="现金"
+               android:textSize="15sp"
+               android:layout_marginLeft="70dp"
+               android:layout_centerVertical="true"/>
+           <RadioButton android:layout_width="35dp"
+               android:layout_height="35dp"
+               android:layout_centerVertical="true"
+               android:background="@drawable/mine2"
+               android:layout_marginLeft="220dp"
+               android:button="@null"/>
+           <RadioButton android:layout_width="35dp"
+               android:layout_height="35dp"
+               android:layout_centerVertical="true"
+               android:background="@drawable/ic_calender"
+               android:layout_marginLeft="275dp"
+               android:button="@null"/>
+       </RelativeLayout>
+       <View android:layout_width="match_parent"
+           android:layout_height="1dp"
+           android:background="#545454"/>
+       <RelativeLayout android:layout_width="match_parent"
+           android:layout_height="60dp"
+           android:background="#236b8e">
+           <RadioButton android:layout_width="40dp"
+               android:layout_height="40dp"
+               android:layout_centerInParent="true"
+               android:background="@drawable/ic_save"
+               android:button="@null"/>
+           </RelativeLayout>
+</LinearLayout>

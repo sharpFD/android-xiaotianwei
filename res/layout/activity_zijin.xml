@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="#ffffff">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:text="我的账户"
+            android:textSize="15dp" />
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:background="#eee"></View>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="#ffffff">
+
+        <TextView
+            android:id="@+id/tv"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="结余"
+            android:textSize="15dp" />
+        <TextView
+            android:id="@+id/zijin_Tv_price"
+            android:layout_marginLeft="10dp"
+            android:gravity="center"
+            android:layout_toRightOf="@id/tv"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="9999"
+            />
+        <Button
+            android:id="@+id/zijin_btn_zhuangzhang"
+            android:layout_marginTop="5dp"
+            android:textColor="#ffffff"
+            android:text="转账"
+            android:background="@drawable/info_shape_btn"
+            android:layout_marginRight="10dp"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp" />
+    </RelativeLayout>
+    <ListView
+        android:dividerHeight="10dp"
+        android:layout_weight="1"
+        android:id="@+id/zijin_Lv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        
+    </ListView>
+    <LinearLayout
+        android:background="#ffffff"
+        android:layout_marginBottom="50dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="35dp">
+        <RelativeLayout
+            android:background="#aaaaaa"
+            android:layout_width="60dp"
+            android:layout_height="match_parent">
+            <ImageView
+                android:id="@+id/zijin_Iv_tianjia"
+                android:layout_centerInParent="true"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/ic_add_2"
+                />
+        </RelativeLayout>
+        <TextView
+            android:background="#ffffff"
+            android:layout_marginLeft="10dp"
+            android:gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="添加账户资金"
+            />
+
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,334 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <RelativeLayout android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <Button 
+            android:layout_width="40dp"
+            android:layout_height="30dp"
+            android:background="@drawable/back1"
+            android:layout_marginLeft="10dp"
+            android:layout_centerVertical="true"/>
+        <LinearLayout android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_marginLeft="40dp"
+            android:orientation="horizontal"
+            android:layout_centerInParent="true"
+            android:background="#00ff00"
+            >
+              <Button
+                android:id="@+id/button1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="支出"
+                android:textColor="#00ff00"
+                android:background="#70db93"
+                android:layout_margin="1dp"
+                />
+              <View android:layout_width="1dp"
+                  android:layout_height="match_parent"
+                  android:background="#cdcdcd"/>
+              <Button
+                android:id="@+id/button2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                 android:background="#70db93"
+                android:text="收入"    
+                 android:layout_margin="1dp"           
+                />
+       </LinearLayout>
+           </RelativeLayout>
+       <RelativeLayout 
+           android:layout_width="match_parent"
+           android:layout_height="60dp"
+           android:background="#ff7f00">
+            <EditText 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+           android:text="0.00"
+           android:textColor="#ff545454"
+           android:layout_marginLeft="260dp"
+           android:layout_centerVertical="true"
+           android:background="#00000000"
+                android:singleLine="true">
+              </EditText>
+       </RelativeLayout> 
+       <RelativeLayout 
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content">
+           <LinearLayout android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:id="@+id/canyin"
+               android:orientation="vertical"
+               android:layout_marginLeft="30dp"
+               >
+               <ImageView android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:id="@+id/pic1"
+                   android:src="@drawable/bt_food"
+                   />
+               <TextView android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:id="@+id/text1"
+                   android:text="餐饮"
+                  android:layout_marginLeft="7dp"
+                   />
+           </LinearLayout>
+             <LinearLayout android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:id="@+id/yanjiu"
+               android:orientation="vertical"
+               android:layout_toRightOf="@id/canyin"
+               android:layout_marginLeft="30dp"
+               >
+               <ImageView android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:id="@+id/pic2"
+                   android:src="@drawable/bt_wine"
+                   />
+               <TextView android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:id="@+id/text2"
+                   android:layout_marginLeft="7dp"
+                   android:text="烟酒">
+                   </TextView>
+           </LinearLayout>
+           <LinearLayout android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:id="@+id/jiaotong"
+               android:orientation="vertical"
+               android:layout_toRightOf="@id/yanjiu"
+               android:layout_marginLeft="30dp"
+              >
+               <ImageView android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:id="@+id/pic3"
+                   android:src="@drawable/bt_car"
+                   />
+               <TextView android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:id="@+id/text3"
+                   android:text="交通"
+                    android:layout_marginLeft="7dp"
+                   />
+           </LinearLayout>
+            <LinearLayout android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:id="@+id/gouwu"
+               android:orientation="vertical"
+               android:layout_toRightOf="@id/jiaotong"
+               android:layout_marginLeft="30dp"
+             >
+               <ImageView android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:id="@+id/pic4"
+                   android:src="@drawable/bt_shopping"
+                   />
+               <TextView android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:id="@+id/text4"
+                   android:text="购物"
+                    android:layout_marginLeft="7dp"
+                   />
+           </LinearLayout>
+       </RelativeLayout>  
+       <RelativeLayout 
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content">
+           <LinearLayout android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:id="@+id/yule"
+               android:orientation="vertical"
+               android:layout_marginLeft="30dp"
+               >
+               <ImageView android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:id="@+id/pic5"
+                   android:src="@drawable/bt_yule"
+                   />
+               <TextView android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:id="@+id/text5"
+                   android:text="娱乐"
+                  android:layout_marginLeft="7dp"
+                   />
+           </LinearLayout>
+             <LinearLayout android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:id="@+id/touzikuisun"
+               android:orientation="vertical"
+               android:layout_toRightOf="@id/yule"
+               android:layout_marginLeft="30dp"
+               >
+               <ImageView android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:id="@+id/pic6"
+                   android:src="@drawable/bt_kuisun"
+                   />
+               <TextView android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:id="@+id/text6"
+                   android:layout_marginLeft="3dp"
+                   android:text="投资亏损">
+                   </TextView>
+           </LinearLayout>
+           <LinearLayout android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:id="@+id/shenghuofuwu"
+               android:orientation="vertical"
+               android:layout_toRightOf="@id/touzikuisun"
+               android:layout_marginLeft="18dp"
+              >
+               <ImageView android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:id="@+id/pic7"
+                   android:src="@drawable/bt_service"
+                   />
+               <TextView android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:id="@+id/text7"
+                   android:text="生活服务"
+                    android:layout_marginLeft="3dp"
+                   />
+           </LinearLayout>
+            <LinearLayout android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:id="@+id/chongzhi"
+               android:orientation="vertical"
+               android:layout_toRightOf="@id/shenghuofuwu"
+               android:layout_marginLeft="12dp"
+             >
+               <ImageView android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:id="@+id/pic8"
+                   android:src="@drawable/bt_chongzhi"
+                   />
+               <TextView android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:id="@+id/text8"
+                   android:text="充值"
+                    android:layout_marginLeft="7dp"
+                   />
+           </LinearLayout>
+       </RelativeLayout>   
+       <RelativeLayout 
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content">
+           <LinearLayout android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:id="@+id/yiyao"
+               android:orientation="vertical"
+               android:layout_marginLeft="30dp"
+               >
+               <ImageView android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:id="@+id/pic9"
+                   android:src="@drawable/bt_madecine"
+                   />
+               <TextView android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:id="@+id/text9"
+                   android:text="医药"
+                  android:layout_marginLeft="7dp"
+                   />
+           </LinearLayout>
+             <LinearLayout android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:id="@+id/zhufang"
+               android:orientation="vertical"
+               android:layout_toRightOf="@id/yiyao"
+               android:layout_marginLeft="30dp"
+               >
+               <ImageView android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:id="@+id/pic10"
+                   android:src="@drawable/bt_house"
+                   />
+               <TextView android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:id="@+id/text10"
+                   android:layout_marginLeft="7dp"
+                   android:text="住房">
+                   </TextView>
+           </LinearLayout>
+           <LinearLayout android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:id="@+id/shuidianmei"
+               android:orientation="vertical"
+               android:layout_toRightOf="@id/zhufang"
+               android:layout_marginLeft="35dp"
+              >
+               <ImageView android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:id="@+id/pic11"
+                   android:src="@drawable/bt_water"
+                   />
+               <TextView android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:id="@+id/text11"
+                   android:text="水电煤"
+                    android:layout_marginLeft="5dp"
+                   />
+           </LinearLayout>
+            <LinearLayout android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:orientation="vertical"
+               android:layout_toRightOf="@id/shuidianmei"
+               android:layout_marginLeft="30dp"
+             >
+               <ImageView android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:id="@+id/pic12"
+                   android:src="@drawable/bt_shicai"
+                   />
+               <TextView android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:id="@+id/text12"
+                   android:text="食材"
+                    android:layout_marginLeft="7dp"
+                   />
+           </LinearLayout>
+       </RelativeLayout> 
+       <RelativeLayout android:layout_width="match_parent"
+           android:layout_height="50dp"
+           android:background="#236b8e"
+           android:layout_marginTop="58dp">
+           <Button android:layout_width="40dp"
+               android:layout_height="40dp"
+               android:layout_centerVertical="true"
+               android:layout_marginLeft="15dp"
+               android:background="@drawable/ft_cash1"/>
+           <TextView android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="现金"
+               android:textSize="15sp"
+               android:layout_marginLeft="70dp"
+               android:layout_centerVertical="true"/>
+           <RadioButton android:layout_width="35dp"
+               android:layout_height="35dp"
+               android:layout_centerVertical="true"
+               android:background="@drawable/mine2"
+               android:layout_marginLeft="220dp"
+               android:button="@null"/>
+           <RadioButton android:layout_width="35dp"
+               android:layout_height="35dp"
+               android:layout_centerVertical="true"
+               android:background="@drawable/ic_calender"
+               android:layout_marginLeft="275dp"
+               android:button="@null"/>
+       </RelativeLayout>
+       <View android:layout_width="match_parent"
+           android:layout_height="1dp"
+           android:background="#545454"/>
+       <RelativeLayout android:layout_width="match_parent"
+           android:layout_height="60dp"
+           android:background="#236b8e">
+           <RadioButton android:layout_width="40dp"
+               android:layout_height="40dp"
+               android:layout_centerInParent="true"
+               android:background="@drawable/ic_save"
+               android:button="@null"/>
+           </RelativeLayout>
+</LinearLayout>
